@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp">
+
+    <ImageView
+        android:id="@+id/ivDrink"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDrink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivDrink"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Something is written here" />
+
+    <TextView
+        android:id="@+id/tvStrInstruction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="In a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar. Shake well. Strain into a sour glass an"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivDrink"
+        app:layout_constraintTop_toBottomOf="@+id/tvDrink" />
+
+    <TextView
+        android:id="@+id/tvCatagory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        tools:text="Ordinary Drink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivDrink"
+        app:layout_constraintTop_toBottomOf="@+id/tvStrInstruction" />
+
+    <TextView
+        android:id="@+id/tvAlcoholic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvStrglass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvCatagory"
+        app:layout_constraintTop_toBottomOf="@+id/tvStrInstruction"
+        tools:text="Alcoholic" />
+
+    <TextView
+        android:id="@+id/tvStrglass"
+        android:layout_width="105dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvAlcoholic"
+        app:layout_constraintTop_toBottomOf="@+id/tvStrInstruction"
+        tools:text="Whiskey sour glass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
